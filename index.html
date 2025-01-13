@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Leila Gharavi's Personal Website</title>
+<style type="text/css">
+body {
+    background-image: url(Images/PhasePortraitBack.png);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<link rel="stylesheet" href="styles.css">
+	
+<body onLoad="MM_preloadImages('Images/Logo_LinkedIn_GS.png')">	
+	
+	<header>
+		<nav class="style-nav">
+			<ul>
+				<li><a href="https://www.leilagharavi.com">Home</a></li>
+				<li><a>Publications</a></li>
+				<li><a>MSc Supervision</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>		
+		<div class="row-white">
+<!--			<img class="style-portrait col" src="Images/Portrait.jpeg" alt="Portrait Photo">-->
+			<div class="style-bio">
+				<img class="style-portrait col" src="Images/Portrait.jpeg" alt="Portrait Photo">
+				<h3>Leila Gharavi<br>PhD Candidate<br>Delft Center for Systems and Control<br>Delft University of Technology</h3>
+				<p>Faculty of ME (Buliding 34)<br> Mekelweg 2<br>2628CD Delft<br>+31-15-27-87025</p>				
+				<!-- LINKEDIN BUTTON -->
+  				<a href="https://www.linkedin.com/in/leila-gharavi-0b140880/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('LinkedIn','','Images/Logo_LinkedIn_GS.png',1)"><img src="Images/Logo_LinkedIn.png" alt="LinkedIn Profile" width="40" height="40" id="LinkedIn"></a>
+				<!-- ORCID BUTTON -->
+  				<a href="https://orcid.org/0000-0003-0301-3504" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ORCiD','','Images/Logo_ORCID_GS.png',1)"><img src="Images/Logo_ORCID.png" alt="ORCiD Profile" width="40" height="40" id="ORCiD"></a>
+				<!-- GOOGLE SCHOLAR BUTTON -->
+  				<a href="https://scholar.google.com/citations?hl=en&user=1U8gUSYAAAAJ" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('GoogleScholar','','Images/Logo_GoogleScholar_GS.png',1)"><img src="Images/Logo_GoogleScholar.png" alt="Google Scholar Profile" width="40" height="40" id="GoogleScholar"></a>
+				<!-- RESEARCHGAT BUTTON -->
+  				<a href="https://www.researchgate.net/profile/Leila-Gharavi-2" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ResearchGate','','Images/Logo_ResearchGate_GS.png',1)"><img src="Images/Logo_ResearchGate.png" alt="LinkedIn Profile" width="40" height="40" id="ResearchGate"></a>
+				<!-- GITHUB BUTTON -->
+  				<a href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fleilagharavi&sa=D&sntz=1&usg=AOvVaw3t_trgjSbRhukPUCu2xeyg" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('GitHub','','Images/Logo_GitHub_GS.png',1)"><img src="Images/Logo_GitHub.png" alt="GitHub Page" width="40" height="40" id="GitHub"></a>
+				<!-- EMAIL BUTTON -->
+  				<a href="mailto:L.Gharavi@tudelft.nl" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Email','','Images/Logo_Mail_GS.png',1)"><img src="Images/Logo_Mail.png" alt="Email Address" width="40" height="40" id="Email"></a>
+				<!-- MSTEAMS BUTTON -->
+  				<a href="https://www.google.com/url?q=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fchat%2F0%2F0%3Fusers%3Dlgharavi%40tudelft.com&sa=D&sntz=1&usg=AOvVaw18tWAg393fnbV3QAKnDSlV" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('MSTeams','','Images/Logo_MSTeams_GS.png',1)"><img src="Images/Logo_MSTeams.png" alt="MS Teams Call" width="40" height="40" id="MSTeams"></a>
+				<!-- SKYPE BUTTON -->
+  				<a href="https://www.google.com/url?q=https%3A%2F%2Fjoin.skype.com%2Finvite%2FcoZv1iWEnPFO&sa=D&sntz=1&usg=AOvVaw026hwd5ocEnUSS_Cdeq6ex" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Skype','','Images/Logo_Skype_GS.png',1)"><img src="Images/Logo_Skype.png" alt="Skype Call" width="40" height="40" id="Skype"></a>
+			 </div>
+		</div>	
+		<br>
+		<div class="row-purple">
+<!--			<div class="col">-->
+				<div class="style-box-purple">
+					<h1>About Me</h1>
+					<p>I received both my BSc and MSc in Mechanical Engineering from Amirkabir University of Technology (Tehran Polytechnic). My research path has been circling around many topics, starting from manufacturing and production, to dynamcis and vibration analysis, and now optimization-based control. </p>
+					<p>My MSc research was on design and implementation of a soft robot for hand rehabilitation. There I developed both a design framework using Finite Element Analysis and a continuum-based analytical model for a soft bending actuator.</p>
+					<p>Currently, I'm a PhD candidate at Delft Center for Sytems and Control. My research is funded by the Dutch research council (NWO) within the project EVOLVE, which aims at proactive and model-based control of automated driving systems during safety-critical aggressive evasive maneuvers. My role in the project is to develop a computationally-efficient predictive control design that predicts as accurate as it can, and controls as fast as possible. In other words, we are trying to see how far we can go in optimizing the automated response to danger while proving safety.</p>
+					<p>In my free time I read about sociopolitical issues, as I enojoy nonlinarity in all its forms. I also watch movies, do street/portrait photography, cook, do pole fitness/dance, and swim. I can speak Persian (Farsi), Arabic (Iraqi), English, and I'm learning Dutch. </p>
+				</div>				
+<!--			</div>-->
+		</div>
+			
+	</main>
+	<footer>
+	
+	</footer>
+</body>
+</html>
