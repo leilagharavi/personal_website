@@ -10,10 +10,35 @@ html * {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
 }
 
+/* GENERAL STYLES -- TEXT */
+
 body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+h1 {
+	font-size: 16pt;
+	text-align: center;
+}
+
+h2 {
+	font-size: 14pt;
+	text-align: left;
+}
+
+h3 {
+	font-size: 13pt;
+	text-align: left;
+}
+
+p {
+	font-size: 12pt;
+	font-weight: normal;
+	text-align: justify;
+	line-height: 18pt;
+}
+
 
 .style-portrait {
 	margin-left: auto;
@@ -205,27 +230,7 @@ body {
 	display: block;
 }
 
-h1 {
-	font-size: 16pt;
-	text-align: center;
-}
 
-h2 {
-	font-size: 14pt;
-	text-align: left;
-}
-
-h3 {
-	font-size: 13pt;
-	text-align: left;
-}
-
-p {
-	font-size: 12pt;
-	font-weight: normal;
-	text-align: justify;
-	line-height: 18pt;
-}
 
 .row-white {
 	background-color: white;
