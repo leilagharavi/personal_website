@@ -1,252 +1,334 @@
-<!doctype html>
 <!DOCTYPE html>
 <html lang="en">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <title>Academia | Leila Gharavi</title>
+
+    <!-- Your modular CSS setup (adjust paths if you’re still using styles.css only) -->
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <!-- Icons & fonts -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <title> Leila Gharavi's personal website </title>
+
+    <!-- JS includes navbar + footer -->
+    <script defer src="/js/include.js"></script>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav>
-<div class="left">
-    <a href="/">Home</a>
-</div>
-<div class="right">
-    <a href="https://orcid.org/0000-0003-0301-3504" target="_blank" rel="noopener no-referrer"> 
-        <i class="fa-brands fa-orcid"></i>
-        <span>ORCiD</span>
+<!-- NAVBAR (page-specific variant loaded via JS) -->
+<div id="navbar"></div>
+
+<main class="container">
+
+    <h1>Academia</h1>
+
+    <!-- TOP SECTION BUTTONS -->
+    <nav class="section-nav">
+        <a class="section-link" href="#education">
+            <i class="fa-solid fa-user-graduate"></i>
+            <span>Education</span>
+        </a>
+        <a class="section-link" href="#academic-experiences">
+            <i class="fa-solid fa-chalkboard-teacher"></i>
+            <span>Academic Experiences</span>
+        </a>
+        <a class="section-link" href="#students">
+            <i class="fa-solid fa-users"></i>
+            <span>Supervised MSc Students</span>
+        </a>
+        <a class="section-link" href="#publications">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Journal Publications</span>
+        </a>
+        <a class="section-link" href="#conferences">
+            <i class="fa-solid fa-microphone"></i>
+            <span>Conference Presentations</span>
+        </a>
+    </nav>
+
+    <!-- Optional: glass CTA to external academic profile -->
+    <!--
+    <a class="glass-btn glass-yellow"
+       href="https://scholar.google.com/citations?hl=en&user=1U8gUSYAAAAJ"
+       target="_blank" rel="noopener no-referrer">
+        <i class="fa-solid fa-book-open"></i>
+        <span>Click here to see my full academic profile</span>
     </a>
-    <a href="https://scholar.google.com/citations?hl=en&user=1U8gUSYAAAAJ" target="_blank" rel="noopener no-referrer"> 
-        <i class="fa-brands fa-google-scholar"></i>
-        <span>Google Scholar</span>
-    </a>
-    <a href="https://www.researchgate.net/profile/Leila-Gharavi-2" target="_blank" rel="noopener no-referrer">
-        <i class="fa-brands fa-researchgate"></i>
-        <span>ResearchGate</span>
-    </a>
-    
-</div>
-</nav>
-    
-<main>
+    -->
 
-<h1>Academia</h1>
+    <!-- =========================
+         EDUCATION
+    ========================== -->
+    <section class="education" id="education">
 
-<section class="education">
+        <h2>Education</h2>
 
-    <h2>Education</h2>
+        <ul>
+            <li><strong>Ph.D.</strong> in Systems and Control,
+                <em>Delft University of Technology,</em> 2021-2025</li>
+            <li><strong>M.Sc.</strong> in Mechanical Engineering,
+                <em>Amirkabir University of Technology,</em> 2017-2020</li>
+            <li><strong>B.Sc.</strong> in Manufacturing and Production,
+                <em>Amirkabir University of Technology,</em> 2013-2017</li>
+        </ul>
 
-    <ul>
-        <li><strong>Ph.D.</strong> in Systems and Control, <em>Delft University of Technology,</em> 2021-2025</li>
-        <li><strong>M.Sc.</strong> in Mechanical Engineering, <em>Amirkabir University of Technology,</em> 2017-2020</li>
-        <li><strong>B.Sc.</strong> in Manufacturing and Production, <em>Amirkabir University of Technology,</em> 2013-2017</li>
-    </ul>
+    </section>
 
-</section>
+    <!-- =========================
+         ACADEMIC EXPERIENCES
+    ========================== -->
+    <section class="academic_exp" id="academic-experiences">
 
-<section class="academic_exp">
+        <h2>Academic Experiences</h2>
 
-    <h2>Academic Experiences</h2>
+        <ul>
+            <li><strong>Teaching assistant & guest lecturer</strong> in Modeling and Control of Hybrid Systems,
+                Delft Center for Systems and Control,
+                –– September 2021 to August 2023</li>
+            <li><strong>Visiting research fellow</strong> at e-Mobility and Control Lab,
+                The University of Tokyo
+                –– February 2024 to April 2024</li>
+            <li><strong>Chair</strong> of Innovative Vehicle Control session
+                at IEEE International Conference on Advanced Motion Control (AMC)
+                –– February 2024</li>
+            <li><strong>Helper</strong> at SoftWare Carpentry (SWC) Workshop /
+                <em>Python, Git, and Unix Shell</em>
+                –– October 2022</li>
+            <li><strong>Department representative</strong> at Faculty PhD Council
+                –– June 2021 to October 2022.</li>
+            <li><strong>Teaching assistant</strong> in Control System Design,
+                Amirkabir University of Technology,
+                –– February 2020 to July 2020</li>
+            <li><strong>Graduate research assistant</strong> at Soft Robotics Research Group,
+                New Technologies Research Center (NTRC)
+                –– October 2019 to May 2020</li>
+            <li><strong>Undergraduate R&D intern</strong> at Turbine Engineering and Manufacturing Company (TUGA)
+                –– July 2015 to September 2020</li>
+        </ul>
 
-    <ul>
-        <li><strong>Teaching assistant & guest lecturer</strong>in Modeling and Control of Hybrid Systems,
-            Delft Center for Systems and Control,
-            –– September 2021 to August 2023</li>
-        <li><strong>Visiting research fellow</strong>at e-Mobility and Control Lab, 
-            The University of Tokyo 
-            –– February 2024 to April 2024</li>
-        <li><strong>Chair</strong>of Innovative Vehicle Control session 
-            at IEEE International Conference on Advanced Motion Control (AMC) 
-            –– February 2024</li>
-        <li><strong>Helper</strong>at SoftWare Carpentry (SWC) Workshop /
-            <em> Python, Git, and Unix Shell </em>
-            –– October 2022 </li>
-        <li><strong>Department representative</strong>at Faculty PhD Council 
-            –– June 2021 to October 2022. </li>
-        <li><strong>Teaching assistant</strong>in Control System Design,
-            Amirkabir University of Technology,
-            –– February 2020 to July 2020</li>
-        <li><strong>Graduate research assistant</strong>at Soft Robotics Research Group,
-            New Technologies Research Center (NTRC) 
-            –– October 2019 to May 2020 </li>
-        <li><strong>Undergraduate R&D intern</strong>at Turbine Engineering and Manufacturing Company (TUGA)
-            –– July 2015 to September 2020 </li>
-    </ul>
+        <gap></gap>
+
+        <!-- =========================
+             SUPERVISED MSc STUDENTS
+        ========================== -->
+        <h3 id="students">Supervised MSc Students</h3>
+
+        <ul>
+            <li><strong>Roald Bruinsma</strong>
+
+                <a href="https://www.linkedin.com/in/roald-bruinsma-6263071bb/"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-brands fa-linkedin-in"></i></button>
+                </a>
+
+                ––
+
+                Double M.Sc. degree in Mechanical Engineering and Systems and Control,
+                <em>Delft University of Technology,</em> July 2024 <br>
+                Model Predictive Approaches for Automated Emergency Maneuvers:
+                A Comparative Analysis of Hybridization for Vehicle Control
+
+                <a href="https://repository.tudelft.nl/record/uuid:a3f1eae7-f28e-40a4-9541-c5cb710a9beb"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-solid fa-book"></i></button>
+                </a>
+            </li>
+
+            <li><strong>Pietro Angaroni</strong>
+
+                <a href="https://www.linkedin.com/in/pang98/"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-brands fa-linkedin-in"></i></button>
+                </a>
+
+                ––
+
+                M.Sc. degree in Mechanical Engineering,
+                <em>The Polytechnic University of Milan,</em> April 2024 <br>
+                Integrated Moving-Horizon Estimator for Tire-Road Friction Coefficient and
+                Model Predictive Path Tracking Controller for an Aggressive Evasive Maneuver
+            </li>
+
+            <li><strong>Jelske Verkuijlen</strong>
+
+                <a href="https://www.linkedin.com/in/jelske-verkuijlen-079065110/"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-brands fa-linkedin-in"></i></button>
+                </a>
+
+                ––
+
+                M.Sc. degree in Systems and Control,
+                <em>Delft University of Technology,</em> April 2024 <br>
+                Advancing Safety in Highway Automated Driving:
+                A Stochastic Model Predictive Approach
+
+                <a href="https://repository.tudelft.nl/record/uuid:c6aab20f-2bc5-49ba-a9d8-ea672a84a252"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-solid fa-book"></i></button>
+                </a>
+            </li>
+
+            <li><strong>Kenrick Trip</strong>
+
+                <a href="https://www.linkedin.com/in/kenrick-trip/"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-brands fa-linkedin-in"></i></button>
+                </a>
+
+                ––
+
+                Double M.Sc. degree in Systems and Control and Embedded Systems,
+                <em>Delft University of Technology,</em> January 2024 <br>
+                Real-time Adaptive Nonlinear MPC for Collision Imminent Control and Planning in Automated Vehicles
+
+                <a href="http://resolver.tudelft.nl/uuid:9afc5dfc-fcf7-41a1-a66e-f23b3714326c"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-solid fa-book"></i></button>
+                </a>
+            </li>
+        </ul>
+
+        <gap></gap>
+
+    </section>
+
+    <!-- =========================
+         JOURNAL PUBLICATIONS
+    ========================== -->
+    <section class="publications" id="publications">
+
+        <h2>Journal Publications</h2>
+
+        <ul>
+            <li><strong>L. Gharavi,</strong> B. De Schutter, S. Baldi (2024).
+                Iterative Cut-Based PWA Approximation of Multi-Dimensional Nonlinear Systems.
+                <em>Under review.</em>
+
+                <a href="https://arxiv.org/abs/2410.16960" target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-regular fa-file"></i></button>
+                </a>
+            </li>
+
+            <li><strong>L. Gharavi,</strong> A. Dabiri, J. Verkuijlen, B. De Schutter, S. Baldi (2024).
+
+                Proactive Emergency Collision Avoidance for Automated Driving in Highway Scenarios.
+                <em>IEEE Transactions on Control Systems Technology</em> early access.
+
+                <a href="https://ieeexplore.ieee.org/abstract/document/10714459"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-solid fa-link"></i></button>
+                </a>
+
+                <a href="https://arxiv.org/abs/2310.17381"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-regular fa-file"></i></button>
+                </a>
+            </li>
+
+            <li><strong>L. Gharavi,</strong> C. Liu, B. De Schutter, S. Baldi (2024).
+
+                Sensitivity Analysis for Piecewise-Affine Approximations of Nonlinear Programs with Polytopic Constraints.
+                <em>IEEE Control Systems Letters</em> 8, pp. 1271-1276.
+
+                <a href="https://ieeexplore.ieee.org/document/10547224"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-solid fa-link"></i></button>
+                </a>
+
+                <a href="https://arxiv.org/abs/2405.20387"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-regular fa-file"></i></button>
+                </a>
+            </li>
+
+            <li><strong>L. Gharavi,</strong> B. De Schutter, S. Baldi (2023).
+                Efficient MPC for Emergency Evasive Maneuvers, Part II: Comparative Assessment for Hybrid Control.
+                <em>Under review.</em>
+                <a href="https://arxiv.org/abs/2310.00716" target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-regular fa-file"></i></button>
+                </a>
+            </li>
+
+            <li><strong>L. Gharavi,</strong> B. De Schutter, S. Baldi (2023).
+                Efficient MPC for Emergency Evasive Maneuvers, Part I: Hybridization of the Nonlinear Problem.
+                <em>Under review.</em>
+                <a href="https://arxiv.org/abs/2310.00715" target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-regular fa-file"></i></button>
+                </a>
+            </li>
+
+            <li><strong>L. Gharavi,</strong> M. Zareinejad, A. Ohadi (2022).
+                Continuum Analysis of a Soft Bending Actuator Dynamics.
+                <em>Mechatronics</em> 83, p. 102739.
+
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957415822000022"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-solid fa-link"></i></button>
+                </a>
+            </li>
+
+            <li><strong>L. Gharavi,</strong> M. Zareinejad, A. Ohadi (2022).
+                Dynamic Finite-Element Analysis of a Soft Bending Actuator.
+                <em>Mechatronics</em> 81, p. 102690.
+
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957415821001537"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-solid fa-link"></i></button>
+                </a>
+            </li>
+        </ul>
+
+        <gap></gap>
+
+        <!-- =========================
+             CONFERENCE PRESENTATIONS
+        ========================== -->
+        <h2 id="conferences">Conference Presentations</h2>
+
+        <ul>
+            <li><strong>L. Gharavi,</strong> B. De Schutter, S. Baldi (2024).
+                H4MPC: A Hybridization Toolbox for Model Predictive Control in Automated Driving.
+                <em>IEEE International Conference on Advanced Motion Control (AMC),</em> pp. 1-6.
+
+                <a href="https://ieeexplore.ieee.org/abstract/document/10505665"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-solid fa-link"></i></button>
+                </a>
+            </li>
+
+            <li><strong>L. Gharavi,</strong> B. De Schutter, S. Baldi (2023).
+                Parametric Piecewise-Affine Approximation of Nonlinear Systems: A Cut-Based Approach.
+                <em>IFAC-PapersOnLine 56(2),</em> pp. 6666-66771.
+
+                <a href="https://www.sciencedirect.com/science/article/pii/S240589632300736X?via%3Dihub"
+                   target="_blank" rel="noopener no-referrer">
+                    <button><i class="fa-solid fa-link"></i></button>
+                </a>
+            </li>
+        </ul>
+
+    </section>
 
     <gap></gap>
-
-    <h3>Supervised MSc Students</h3>
-
-    <ul>
-        <li><strong>Roald Bruinsma</strong> 
-            
-            <a href="https://www.linkedin.com/in/roald-bruinsma-6263071bb/" 
-            target="_blank" rel="noopener no-referrer">
-            <button><i class="fa-brands fa-linkedin-in"></i></button></a>
-            
-            –– 
-
-            Double M.Sc. degree in Mechanical Engineering and Systems and Control,
-            <em>Delft University of Technology,</em> July 2024 <br>
-            Model Predictive Approaches for Automated Emergency Maneuvers:
-            A Comparative Analysis of Hybridization for Vehicle Control
-            
-            <a href="https://repository.tudelft.nl/record/uuid:a3f1eae7-f28e-40a4-9541-c5cb710a9beb" 
-            target="_blank" rel="noopener no-referrer">
-            <button><i class="fa-solid fa-book"></i></button></a></li>
-
-        <li><strong>Pietro Angaroni</strong> 
-        
-            <a href="https://www.linkedin.com/in/pang98/" 
-            target="_blank" rel="noopener no-referrer">
-            <button><i class="fa-brands fa-linkedin-in"></i></button></a>
-            
-            –– 
-
-            M.Sc. degree in Mechanical Engineering,
-            <em>The Polytechnic University of Milan,</em> April 2024 <br>
-            Integrated Moving-Horizon Estimator for Tire-Road Friction Coefficient and 
-            Model Predictive Path Tracking Controller for an Aggressive Evasive Maneuver</li>
-
-        <li><strong>Jelske Verkuijlen</strong> 
-        
-            <a href="https://www.linkedin.com/in/jelske-verkuijlen-079065110/" 
-            target="_blank" rel="noopener no-referrer">
-            <button><i class="fa-brands fa-linkedin-in"></i></button></a>
-            
-            –– 
-
-            M.Sc. degree in Systems and Control,
-            <em>Delft University of Technology,</em> April 2024 <br>
-            Advancing Safety in Highway Automated Driving: 
-            A Stochastic Model Predictive Approach
-            
-            <a href="https://repository.tudelft.nl/record/uuid:c6aab20f-2bc5-49ba-a9d8-ea672a84a252" 
-            target="_blank" rel="noopener no-referrer">
-            <button><i class="fa-solid fa-book"></i></button></a></li>
-    
-        <li><strong>Kenrick Trip</strong> 
-    
-            <a href="https://www.linkedin.com/in/kenrick-trip/" 
-            target="_blank" rel="noopener no-referrer">
-            <button><i class="fa-brands fa-linkedin-in"></i></button></a>
-            
-            –– 
-
-            Double M.Sc. degree in Systems and Control and Embedded Systems,
-            <em>Delft University of Technology,</em> January 2024 <br>
-            Real-time Adaptive Nonlinear MPC for Collision Imminent Control and Planning in Automated Vehicles
-            
-            <a href="http://resolver.tudelft.nl/uuid:9afc5dfc-fcf7-41a1-a66e-f23b3714326c" 
-            target="_blank" rel="noopener no-referrer">
-            <button><i class="fa-solid fa-book"></i></button></a></li>
-    </ul>
-
-    <gap></gap>
-    
-</section>
-
-<section class="publications">
-
-    <h2>Journal Publications</h2>
-
-    <ul>
-        <li><strong>L. Gharavi,</strong> B. De Schutter, S. Baldi (2024). 
-            Iterative Cut-Based PWA Approximation of Multi-Dimensional Nonlinear Systems. 
-            <em>Under review.</em>
-
-            <a href="https://arxiv.org/abs/2410.16960" target="_blank" rel="noopener no-referrer">
-                <button><i class="fa-regular fa-file"></i></button></a></li>
-
-        <li><strong>L. Gharavi,</strong> A. Dabiri, J. Verkuijlen, B. De Schutter, S. Baldi (2024). 
-
-            Proactive Emergency Collision Avoidance for Automated Driving in Highway Scenarios. 
-            <em>IEEE Transactions on Control Systems Technology</em> early access.
-
-            <a href="https://ieeexplore.ieee.org/abstract/document/10714459" target="_blank" rel="noopener no-referrer">
-                <button><i class="fa-solid fa-link"></i></button></a>
-
-            <a href="https://arxiv.org/abs/2310.17381" target="_blank" rel="noopener no-referrer">
-                <button><i class="fa-regular fa-file"></i></button></a></li>
-
-        <li><strong>L. Gharavi,</strong> C. Liu, B. De Schutter, S. Baldi (2024). 
-
-            Sensitivity Analysis for Piecewise-Affine Approximations of Nonlinear Programs with Polytopic Constraints. 
-            <em>IEEE Control Systems Letters</em> 8, pp. 1271-1276.
-            
-            <a href="https://ieeexplore.ieee.org/document/10547224" target="_blank" rel="noopener no-referrer">
-                <button><i class="fa-solid fa-link"></i></button></a>
-
-            <a href="https://arxiv.org/abs/2405.20387" target="_blank" rel="noopener no-referrer">
-                    <button><i class="fa-regular fa-file"></i></button></a></li>
-        
-        <li><strong>L. Gharavi,</strong> B. De Schutter, S. Baldi (2023). 
-            Efficient MPC for Emergency Evasive Maneuvers, Part II: Comparative Assessment for Hybrid Control.
-            <em>Under review.</em>
-            <a href="https://arxiv.org/abs/2310.00716" target="_blank" rel="noopener no-referrer">
-                <button><i class="fa-regular fa-file"></i></button></a></li>
-
-        <li><strong>L. Gharavi,</strong> B. De Schutter, S. Baldi (2023). 
-            Efficient MPC for Emergency Evasive Maneuvers, Part I: Hybridization of the Nonlinear Problem. 
-            <em>Under review.</em>
-            <a href="https://arxiv.org/abs/2310.00715" target="_blank" rel="noopener no-referrer">
-                <button><i class="fa-regular fa-file"></i></button></a></li>
-
-        <li><strong>L. Gharavi,</strong> M. Zareinejad, A. Ohadi (2022). 
-            Continuum Analysis of a Soft Bending Actuator Dynamics. 
-            <em>Mechatronics</em> 83, p. 102739. 
-            
-            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957415822000022" target="_blank" rel="noopener no-referrer">
-                <button><i class="fa-solid fa-link"></i></button></a></li>
-
-        <li><strong>L. Gharavi,</strong> M. Zareinejad, A. Ohadi (2022). 
-            Dynamic Finite-Element Analysis of a Soft Bending Actuator. 
-            <em>Mechatronics</em> 81, p. 102690. 
-
-            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957415821001537" target="_blank" rel="noopener no-referrer">
-                <button><i class="fa-solid fa-link"></i></button></a></li>			
-    </ul>
-    
-    <gap></gap>
-
-    <h2>Conference Presentations</h2>
-
-    <ul>
-        <li><strong>L. Gharavi,</strong> B. De Schutter, S. Baldi (2024). 
-            H4MPC: A Hybridization Toolbox for Model Predictive Control in Automated Driving. 
-            <em>IEEE International Conference on Advanced Motion Control (AMC),</em> pp. 1-6. 
-
-            <a href="https://ieeexplore.ieee.org/abstract/document/10505665" target="_blank" rel="noopener no-referrer">
-                <button><i class="fa-solid fa-link"></i></button></a></li>
-
-        <li><strong>L. Gharavi,</strong> B. De Schutter, S. Baldi (2023). 
-            Parametric Piecewise-Affine Approximation of Nonlinear Systems: A Cut-Based Approach. 
-            <em>IFAC-PapersOnLine 56(2),</em> pp. 6666-66771. 
-
-            <a href="https://www.sciencedirect.com/science/article/pii/S240589632300736X?via%3Dihub" target="_blank" rel="noopener no-referrer">
-                <button><i class="fa-solid fa-link"></i></button></a></li>
-    </ul>
-</section> 
-
-<gap></gap>
 
 </main>
 
+<!-- FOOTER (fixed via CSS, content loaded via JS include) -->
+<div id="footer"></div>
+
 </body>
-
-<footer>
-	<em>This page was last maintained on 18 January 2025.</em>
-</footer>
-
-</html> 
+</html>

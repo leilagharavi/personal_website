@@ -1,0 +1,14 @@
+@media(max-width:520px){
+    .nav-link{display:none;}
+    .placeholder-headshot{width:150px;height:150px;}
+}
+@media(min-width:700px){
+    .greetings{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:30px;
+    }
+    .greeting-text{flex:1;}
+    .greeting-image{flex:0 0 240px;}
+}

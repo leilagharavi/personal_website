@@ -1,0 +1,22 @@
+:root{
+    --color-bg:#eee;
+    --color-text:#111827;
+    --color-accent:#CA1551;
+    --color-muted:#6b7280;
+    --max-width:1000px;
+}
+*{
+    margin:2px;
+    padding:2px 0;
+    box-sizing:border-box;
+    gap: 10px;
+    text-decoration: none;
+}
+body{
+    font-family:'Nunito',sans-serif;
+    background:var(--color-bg);
+    padding-top:72px;
+}
+section{
+    scroll-margin-top:60px;
+}

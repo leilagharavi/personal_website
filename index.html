@@ -1,88 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <title> Leila Gharavi's personal website </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leila Gharavi — Home</title>
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <script defer src="/js/include.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
-
 
 <body>
 
-<!-- NAVBAR -->
-<nav>
-<div class="left">
-	<a href="/">Home</a>
-</div>
-<div class="right">
-	<a href="https://github.com/leilagharavi" target="_blank" rel="noopener no-referrer"> 
-		<i class="fa-brands fa-github"></i>
-		<span>GitHub</span>
-	</a>
-	<a href="https://www.linkedin.com/in/leila-gharavi/" target="_blank" rel="noopener no-referrer"> 
-		<i class="fa-brands fa-linkedin-in"></i>
-		<span>LinkedIn</span>
-	</a>
-	<a href="mailto:gharavi95@gmail.com"> 
-		<i class="fa-solid fa-envelope"></i>
-		<span>Email</span>
-	</a>
-	
-</div>
+<div id="navbar"></div>
 
-</nav>
-
-<main>
-
-<!-- GREETINGS -->
+<main class="container">
 
 <section class="greetings">
-
-	<div class="text">
-
-		<h1>Hi, I'm Leila!</h1>
-
-		<p>I'm a PhD candidate in systems and control 
+    <div class="greeting-text">
+        <h1>Hi, I'm Leila!</h1>
+        <p>
+            I'm a PhD candidate in systems and control 
 			at Delft University of Technology. 
 			I'm working on a new look for my website, 
-			so this page is frequently being updated.</p>
+			so this page is frequently being updated.
+        </p>
 
-		<p>To know more about my skills, checkout the following pages:</p>
-		<div class="links">
-			<a href="skills.html">
-				<i class="fa-solid fa-toolbox"></i>
-				<span>Skills</span>
-			</a>
-			<a href="academia.html">
-				<i class="fa-solid fa-graduation-cap"></i>
-				<span>Academia</span>
-			</a>
-			<a href="sclptcycle.html">
-				<i class="fa-solid fa-graduation-cap"></i>
-				<span>SclptCycle</span>
-			</a>
-		</div>
-	</div>
+        <div class="cta">
+            <a class="glass-btn glass-teal" href="academia.html"><i class="fa-solid fa-graduation-cap"></i><span>Check out my academic side!</span></a>
+        </div>
+        
+    </div>
 
 </section>
 
-
 </main>
 
+<div id="footer"></div>
+
 </body>
-
-<footer>
-	<em>This page was last maintained on 18 January 2025.</em>
-</footer>
-
-
 </html>
+<!--<a class="glass-btn glass-yellow" href="skills.html"><i class="fa-solid fa-toolbox"></i><span>Curious about my skills?</span></a>
+            <a class="glass-btn glass-red" href="sclptcycle.html"><i class="fa-solid fa-person-biking"></i><span>SclptCycle party!</span></a>-->
