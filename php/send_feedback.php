@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    $to = "YOUR_EMAIL_HERE"; 
+    $to = "gharavi95@gmail.com"; 
     $subject = "New SclptCycle Feedback";
     
     $name = $_POST["name"];
