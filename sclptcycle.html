@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SclptCycle | Leila Gharavi</title>
+
+    <!-- CSS (same theme as other pages) -->
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <!-- Icons & fonts -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- JS includes navbar + footer -->
+    <script defer src="/js/include.js"></script>
+
+    <!-- OPTIONAL: smooth scroll -->
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR (page-specific) -->
+<div id="navbar"></div>
+
+<main class="container">
+
+    <h1>SclptCycle</h1>
+
+    <!-- TOP SECTION BUTTONS -->
+    <nav class="section-nav">
+        <a class="section-link" href="#about">
+            <i class="fa-solid fa-bicycle"></i>
+            <span>About</span>
+        </a>
+        <a class="section-link" href="#classes">
+            <i class="fa-solid fa-dumbbell"></i>
+            <span>Classes</span>
+        </a>
+        <a class="section-link" href="#feedback">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span>Feedback Form</span>
+        </a>
+    </nav>
+
+    <!-- =========================
+         ABOUT THE PROJECT
+    ========================== -->
+    <section id="about">
+        <h2>About SclptCycle</h2>
+        <p>SclptCycle is a party on a bike! 🥳</p>
+        <p>It's an energetic, technique-focused bodyshape workout, designed to improve
+            coordination, rhythm, endurance, and full-body engagement.</p>
+        <gap></gap>
+        <p>
+            I blend choreography with gentle, body-awareness cues and simple physics insights, 
+            helping you notice how each motion feels and how your body responds. 
+            My goal is to create an inclusive, fun, and
+            uplifting environment where you can challenge yourself safely and confidently.
+    </section>
+
+    <gap></gap>
+
+    <!-- =========================
+         CLASS INFORMATION
+    ========================== -->
+    <section id="classes">
+        <h2>Classes</h2>
+        <ul>
+            <li>📍 <strong>Location:</strong> X TU Delft</li>
+            <li>🗓️ <strong>Schedule:</strong> Tuesdays @ 16:45 | Fridays @ 17:15</li>
+            <li>🕒 <strong>Duration:</strong> 45 minutes</li>
+            <li>🎯 <strong>Suitable for:</strong> All levels (beginner-friendly!)</li>
+        </ul>
+
+        <gap></gap>
+
+        <!-- CTA to feedback section -->
+        <a class="glass-btn glass-red" href="#feedback">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Give Feedback on Your Class</span>
+        </a>
+    </section>
+
+    <gap></gap>
+
+    <!-- =========================
+         FEEDBACK FORM
+    ========================== -->
+    <section id="feedback">
+        <h2>Feedback Form</h2>
+        <p>Your feedback helps me make the classes better and tailor them to your goals 💛</p>
+
+        <form class="feedback-form" action="/php/send_feedback.php" method="POST">
+            <label>
+                Your name (optional)
+                <input type="text" name="name" placeholder="Your name">
+            </label>
+
+            <label>
+                Which class did you attend?
+                <input type="text" name="class" placeholder="e.g. Monday 18:00, Intro class, etc." required>
+            </label>
+
+            <label>
+                How would you rate the class?
+                <select name="rating" required>
+                    <option value="" disabled selected>Select rating</option>
+                    <option>⭐ 1 — Not great</option>
+                    <option>⭐⭐ 2 — OK</option>
+                    <option>⭐⭐⭐ 3 — Good</option>
+                    <option>⭐⭐⭐⭐ 4 — Very good</option>
+                    <option>⭐⭐⭐⭐⭐ 5 — Amazing!</option>
+                </select>
+            </label>
+
+            <label>
+                What did you like?
+                <textarea name="positives" placeholder="Tell me what worked well!"></textarea>
+            </label>
+
+            <label>
+                What could be improved?
+                <textarea name="improvements" placeholder="Anything you'd change?"></textarea>
+            </label>
+
+            <label>
+                Anything else you'd like to tell me?
+                <textarea name="extra"></textarea>
+            </label>
+
+            <button type="submit" class="glass-btn glass-red">
+                <i class="fa-solid fa-heart"></i>
+                <span>Send Feedback</span>
+            </button>
+        </form>
+    </section>
+
+    <gap></gap>
+    <gap></gap>
+
+</main>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script>
+document.querySelector(".feedback-form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let form = this;
+    let data = new FormData(form);
+
+    fetch("/php/send_feedback.php", {
+        method: "POST",
+        body: data
+    })
+    .then(res => res.text())
+    .then(text => {
+        if (text.includes("SUCCESS")) {
+            alert("Thank you! Your feedback has been sent ♥");
+            form.reset();
+        } else {
+            alert("Something went wrong — please try again.");
+        }
+    });
+});
+</script>
+
+</body>
+</html>

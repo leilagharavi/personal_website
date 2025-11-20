@@ -209,4 +209,39 @@
     transform:translateY(-1px);
     box-shadow:0 4px 10px rgba(0,0,0,0.12);
 }
+/* SCLPTCYCLE FORM */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.feedback-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    margin-top: 6px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1.5px solid #ddd;
+    font-size: 15px;
+    font-family: inherit;
+    background: rgba(255,255,255,0.8);
+}
+
+.feedback-form textarea {
+    min-height: 100px;
+}
+
+.feedback-form button {
+    margin-top: 10px;
+    align-self: flex-start;
+}
 
