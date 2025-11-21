@@ -11,6 +11,12 @@
     box-sizing:border-box;
     text-decoration: none;
 }
+/* Only containers that need gap should have it */
+.greetings,
+.section-nav,
+.feedback-form {
+    gap: 10px;
+}
 body{
     font-family:'Nunito',sans-serif;
     background:var(--color-bg);
