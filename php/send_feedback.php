@@ -28,7 +28,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $extra
     ";
 
-    $headers = "From: feedback@yourdomain.com";
+    // IMPORTANT:
+    // Use a REAL email created in Hostinger Email accounts
+    $headers  = "From: leila@leilagharavi.com\r\n";
+    $headers .= "Reply-To: leila@leilagharavi.com\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion();
 
     if (mail($to, $subject, $message, $headers)) {
         echo "SUCCESS";
