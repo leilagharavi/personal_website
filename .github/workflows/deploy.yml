@@ -16,5 +16,8 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./ 
-          server-dir: ./public_html/
+          # Use ./ to say "everything in my current GitHub folder"
+          local-dir: ./
+          # Use ./ to say "put it in the root folder I land in" 
+          # (Most Hostinger FTP users land directly inside public_html)
+          server-dir: ./
