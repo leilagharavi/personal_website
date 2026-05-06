@@ -10,3 +10,47 @@
 .styled-list li{
     margin-bottom:10px;
 }
+
+.centered-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+}
+
+.main-tagline {
+    font-size: 1.2rem;
+    color: var(--color-muted);
+    margin-bottom: 48px;
+}
+
+.portal-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px; /* Keeps the buttons from stretching too wide */
+}
+
+/* Make the buttons feel like "Pillars" */
+.glass-bold {
+    background: rgba(202, 21, 81, 0.1);
+    border-color: rgba(202, 21, 81, 0.3);
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    text-align: left;
+}
