@@ -62,7 +62,7 @@
         </div>
         <div class="stat-line">
             <strong>Versatile</strong>
-            <span>Cross-domain retail & research expertise</span>
+            <span>Cross-domain commercial & research expertise</span>
         </div>
         <div class="stat-line">
             <strong>Strategic</strong>
@@ -204,11 +204,82 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- PROJECT: Dodging the Moose -->
+                <div class="impact-card project-card" onclick="toggleProject(this)">
+                    <div class="impact-icon">
+                        <i class="fa-solid fa-car-crash"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h3 class="impact-title">Real Car Collision Avoidance</h3>
+                        <p class="impact-desc">Successfully tested automated emergency maneuvers on a real electric vehicle in Japan</p>
+                        <!-- HINT: Tells user to click -->
+                        <div class="click-hint"><i class="fa-solid fa-angle-down"></i> Click to expand</div>
+
+
+                        <div class="star-content" style="display:none; margin-top:16px; border-top:2px solid var(--color-accent); padding-top:16px;">
+
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Situation</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    Automated emergency braking and steering systems often fail in sudden obstacle scenarios 
+                                    because they're too slow or too conservative. 
+                                    Testing these systems on real cars (not just simulations) is expensive, risky, and rarely done. 
+                                    I had the opportunity to work on this at e-Mobility & Control lab's electric vehicle lab.
+                                </p>
+                            </div>
+
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Task</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    Implement and test a collision avoidance system on a real electric vehicle. 
+                                    The goal was to prove that an intelligent control system can react faster and 
+                                    more safely than human drivers in "moose test" (sudden static obstacles on the road) scenarios .
+                                </p>
+                            </div>
+
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Action</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    <strong>On-the-fly adaptation:</strong> 
+                                    Upon starting the assignment, I discovered that 
+                                    the platform differed significantly from what we had assumed in the proposal. 
+                                    I rewrote the implementation plan on the spot to work with the actual hardware and sensors available.
+                                </p>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    <strong>Design & testing:</strong> 
+                                    Developed a dual-planner system combining predictive control with a human-like "maximum steering" fallback. 
+                                    Tested it across multiple speeds and hazard levels on a real test track and 
+                                    validated the system's ability to avoid collisions where the controller alone failed.
+                                </p>
+                            </div>
+
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Result</strong>
+                                <p style="margin:4px 0 0 0; font-size:0.95rem; color:var(--color-text);">
+                                    See it in action:
+                                </p>
+                                <div style="margin-top:8px;">
+                                    <a href="https://youtu.be/GQk1n9bXKJU?si=jctVuaqXLBNI9V63" target="_blank" style="display:inline-flex; align-items:center; gap:8px; color:var(--color-accent); text-decoration:none; font-weight:600; font-size:0.95rem; background:rgba(202,21,81,0.08); padding:6px 14px; border-radius:20px;">
+                                        <i class="fab fa-youtube" style="font-size:1.2rem;"></i> Watch Real Car Test
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div style="margin-top:16px; display:flex; gap:16px; flex-wrap:wrap; padding-top:12px; border-top:1px solid rgba(0,0,0,0.06);">
+                                <a href="https://arxiv.org/pdf/2602.17512" target="_blank" style="color:var(--color-accent); text-decoration:none; font-weight:600; font-size:0.9rem;">
+                                    <i class="fas fa-external-link-alt"></i> View Publication
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             
                 <!-- PROJECT: H4MPC -->
                 <div class="impact-card project-card" onclick="toggleProject(this)">
                     <div class="impact-icon">
-                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-toolbox"></i>
                     </div>
                     <div class="impact-content">
                         <h3 class="impact-title">H4MPC: A Toolbox for Automated Driving</h3>
@@ -275,7 +346,7 @@
                 <!-- PROJECT: Proactive Emergency Collision Avoidance -->
                 <div class="impact-card project-card" onclick="toggleProject(this)">
                     <div class="impact-icon">
-                        <i class="fa-solid fa-shield-halved"></i>
+                        <i class="fa-solid fa-road-circle-check"></i>
                     </div>
                     <div class="impact-content">
                         <h3 class="impact-title">Proactive Emergency Collision Avoidance</h3>
@@ -336,7 +407,14 @@
                         </div>
                     </div>
                 </div>
-            
+            </section>
+        </div>
+    </div>   
+    
+    <div class="container">
+        <h2 style="text-align:center; margin-bottom:0px; font-weight:700;">Brand</h2>
+        <div class="impact-grid">
+            <section class="impact-grid">
             
                 <!-- Card 1: Pattern Recognition -->
                 <div class="impact-card">
@@ -371,9 +449,9 @@
                             moving beyond innovation theater into grounded operational scale.</p>
                     </div>
                 </div>
-            </section>
+             </section>
         </div>
-    </div>
+    </div>                 
 
     
 
