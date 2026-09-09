@@ -232,7 +232,7 @@
                                 <strong style="color:var(--color-accent);">Task</strong>
                                 <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
                                     Design a practical solution that makes nonlinear control computationally tractable 
-                                    without sacrificing performance—accessible to engineers, not just academics.
+                                    without sacrificing performance that is accessible to engineers and academics.
                                 </p>
                             </div>
                             
@@ -242,7 +242,6 @@
                                     <strong>Technical delivery:</strong> Developed H4MPC, an open-source MATLAB toolbox with a graphical user interface 
                                     that automates the process of approximating complex nonlinear functions 
                                     with computationally efficient alternatives. 
-                                    Built two real-world case studies to validate performance: vehicle dynamics and tire saturation constraints.
                                 </p>
                                 <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
                                     <strong>Verification:</strong> Built two real-world case studies to validate performance: 
@@ -266,6 +265,71 @@
                                 </a>
                                 <a href="https://bit.ly/H4MPCV1" target="_blank" style="color:var(--color-accent); text-decoration:none; font-weight:600; font-size:0.9rem;">
                                     <i class="fa-regular fa-file-code"></i> View Toolbox
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT: Proactive Emergency Collision Avoidance -->
+                <div class="impact-card project-card" onclick="toggleProject(this)">
+                    <div class="impact-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h3 class="impact-title">Proactive Emergency Collision Avoidance</h3>
+                        <p class="impact-desc">Stochastic control strategy that enables safer, less conservative emergency maneuvers in highway scenarios</p>
+                        <!-- HINT: Tells user to click -->
+                        <div class="click-hint"><i class="fa-solid fa-angle-down"></i> Click to expand</div>
+
+                        <div class="star-content" style="display:none; margin-top:16px; border-top:2px solid var(--color-accent); padding-top:16px;">
+
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Situation</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    Automated driving systems often take overly conservative decisions in emergency situations. 
+                                    For example, they take unnecessary braking because they can't predict other drivers' behavior. 
+                                    This creates safety risks (e.g., rear-end collisions) and reduces trust in autonomous systems.
+                                </p>
+                            </div>
+
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Task</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    Develop a control strategy that enables proactive emergency maneuvers 
+                                    (such as safely changing lanes to avoid a collision) 
+                                    rather than just reacting with conservative braking.
+                                </p>
+                            </div>
+
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Action</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    <strong>Technical delivery:</strong> Designed a stochastic predictive planner that accounts for uncertainty in other vehicles' behavior. 
+                                    The design uses advanced approximation techniques to enable real-time implementation. 
+                                </p>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    <strong>Verification:</strong> Validated the approach in industry standard high-fidelity simulations
+                                    and benchmarked against state-of-the-art methods.
+                                </p>
+                            </div>
+
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Result</strong>
+                                <p style="margin:4px 0 0 0; font-size:0.95rem; color:var(--color-text);">
+                                    See it in action!
+                                </p>
+                                <div style="margin-top:8px;">
+                                    <a href="https://www.youtube.com/watch?v=UacmQDjQ2vI" target="_blank" style="display:inline-flex; align-items:center; gap:8px; color:var(--color-accent); text-decoration:none; font-weight:600; font-size:0.95rem; background:rgba(202,21,81,0.08); padding:6px 14px; border-radius:20px;">
+                                        <i class="fab fa-youtube" style="font-size:1.2rem;"></i> Watch Simulation Video
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div style="margin-top:16px; display:flex; gap:16px; flex-wrap:wrap; padding-top:12px; border-top:1px solid rgba(0,0,0,0.06);">
+                                <a href="https://ieeexplore.ieee.org/abstract/document/10714459" target="_blank" style="color:var(--color-accent); text-decoration:none; font-weight:600; font-size:0.9rem;">
+                                    <i class="fas fa-external-link-alt"></i> View Publication
                                 </a>
                             </div>
 
