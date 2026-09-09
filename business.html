@@ -75,73 +75,135 @@
         <h2 style="text-align:center; margin-bottom:0px; font-weight:700;">Project Portfolio</h2>
         <div class="impact-grid">
             <section class="impact-grid">
+                <!-- PROJECT: Data Pipeline -->
                 <div class="impact-card project-card" onclick="toggleProject(this)">
-    <div class="impact-icon">
-        <i class="fa-solid fa-database"></i>
-    </div>
-    <div class="impact-content">
-        <h3 class="impact-title">Data Pipeline: From Zero to Production</h3>
-        <p class="impact-desc">Revived a halted project by building the business case and delivering a production-grade pipeline</p> 
-        <!-- HINT: Tells user to click -->
-        <div class="click-hint"><i class="fa-solid fa-angle-down"></i> Click to expand</div>
-        
-        <!-- STAR CONTENT (hidden by default) -->
-        <div class="star-content" style="display:none; margin-top:16px; border-top:2px solid var(--color-accent); padding-top:16px;">
-            
-            <div class="star-item">
-                <strong style="color:var(--color-accent);">Situation</strong>
-                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                    A large e-commerce retailer's order data was consumed by multiple business domains. A legacy pipeline existed but had unclear ownership, and the project to rebuild it had been halted.
-                </p>
-            </div>
-            
-            <div class="star-item">
-                <strong style="color:var(--color-accent);">Task</strong>
-                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                    Revive the halted project and deliver a new pipeline that 
-                    establishes clear ownership, 
-                    serves all domains with GDPR-compliant access controls, and
-                    replaces the legacy pipeline.
-                </p>
-            </div>
-            
-            <div class="star-item">
-                <strong style="color:var(--color-accent);">Action</strong>
-                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                    <strong>Business case:</strong> Quantified the value of the new pipeline 
-                    (including development velocity gains and cloud cost optimization) 
-                    which brought the project back onto the roadmap.
-                </p>
-                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                    <strong>Technical delivery:</strong> Architected and productionized the full pipeline:
-                    orchestration by Airflow, 
-                    modeling by dbt with star schema (facts and dimensions),
-                    storage in BigQuery with partitioned tables, and 
-                    documentation including comprehensive guides with examples for all users.
-                </p>
-            </div>
-            
-            <div class="star-item">
-                <strong style="color:var(--color-accent);">Result</strong>
-                <p style="margin:4px 0 0 0; font-size:0.95rem; color:var(--color-text);">
-                    <i class="fa-regular fa-square-check"></i> Pipeline productionized<br>
-                    <i class="fa-regular fa-square-check"></i> Clear ownership structure established<br>
-                    <i class="fa-regular fa-square-check"></i> GDPR-compliant access implemented<br>
-                    <i class="fa-regular fa-square-check"></i> Documentation enabled smooth onboarding<br>
-                    <i class="fa-regular fa-square-check"></i> Migration guide handed over to the legacy pipeline owners
-                </p>
-            </div>
-            
-            <div style="margin-top:16px; display:flex; gap:16px; flex-wrap:wrap; padding-top:12px; border-top:1px solid rgba(0,0,0,0.06);">
-                <span style="font-size:0.8rem; color:var(--color-muted);">
-                    <i class="fas fa-lock"></i> Internal project, details available upon request
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
-            
-            
+                    <div class="impact-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h3 class="impact-title">Data Pipeline: From Zero to Production</h3>
+                        <p class="impact-desc">Revived a halted project by building the business case and delivering a production-grade pipeline</p> 
+                        <!-- HINT: Tells user to click -->
+                        <div class="click-hint"><i class="fa-solid fa-angle-down"></i> Click to expand</div>
+                        
+                        <!-- STAR CONTENT (hidden by default) -->
+                        <div class="star-content" style="display:none; margin-top:16px; border-top:2px solid var(--color-accent); padding-top:16px;">
+                            
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Situation</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    A large e-commerce retailer's order data was consumed by multiple business domains. A legacy pipeline existed but had unclear ownership, and the project to rebuild it had been halted.
+                                </p>
+                            </div>
+                            
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Task</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    Revive the halted project and deliver a new pipeline that 
+                                    establishes clear ownership, 
+                                    serves all domains with GDPR-compliant access controls, and
+                                    replaces the legacy pipeline.
+                                </p>
+                            </div>
+                            
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Action</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    <strong>Business case:</strong> Quantified the value of the new pipeline 
+                                    (including development velocity gains and cloud cost optimization) 
+                                    which brought the project back onto the roadmap.
+                                </p>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    <strong>Technical delivery:</strong> Architected and productionized the full pipeline:
+                                    orchestration by Airflow, 
+                                    modeling by dbt with star schema (facts and dimensions),
+                                    storage in BigQuery with partitioned tables, and 
+                                    documentation including comprehensive guides with examples for all users.
+                                </p>
+                            </div>
+                            
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Result</strong>
+                                <p style="margin:4px 0 0 0; font-size:0.95rem; color:var(--color-text);">
+                                    <i class="fa-regular fa-square-check"></i> Pipeline productionized<br>
+                                    <i class="fa-regular fa-square-check"></i> Clear ownership structure established<br>
+                                    <i class="fa-regular fa-square-check"></i> GDPR-compliant access implemented<br>
+                                    <i class="fa-regular fa-square-check"></i> Documentation enabled smooth onboarding<br>
+                                    <i class="fa-regular fa-square-check"></i> Migration guide handed over to the legacy pipeline owners
+                                </p>
+                            </div>
+                            
+                            <div style="margin-top:16px; display:flex; gap:16px; flex-wrap:wrap; padding-top:12px; border-top:1px solid rgba(0,0,0,0.06);">
+                                <span style="font-size:0.8rem; color:var(--color-muted);">
+                                    <i class="fas fa-lock"></i> Internal project, details available upon request
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT: No Man's Cart -->
+                <div class="impact-card project-card" onclick="toggleProject(this)">
+                    <div class="impact-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h3 class="impact-title">Stock Claim Investigation</h3>
+                        <p class="impact-desc">Uncovered a hidden process issue and implemented a solution to recover operational capacity</p> 
+                        <!-- HINT: Tells user to click -->
+                        <div class="click-hint"><i class="fa-solid fa-angle-down"></i> Click to expand</div>
+                        
+                        <!-- STAR CONTENT (hidden by default) -->
+                        <div class="star-content" style="display:none; margin-top:16px; border-top:2px solid var(--color-accent); padding-top:16px;">
+                            
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Situation</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    Stock claims were accumulating due to orders stuck in an undefined status. 
+                                    The root cause was unknown, the scope was unclear, and the issue was affecting multiple stakeholders.
+                                </p>
+                            </div>
+                            
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Task</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    Investigate the issue independently, 
+                                    identify the root cause, 
+                                    quantify the impact, and 
+                                    deliver a solution.
+                                </p>
+                            </div>
+                            
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Action</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    First, conducted a cross-functional investigation, gathering insights from multiple teams to piece together the full picture. 
+                                    Identified that orders which couldn't be fulfilled were later holding stock claims, 
+                                    taking up storage space and consuming purchasing capacity, even after refunds had been processed.
+                                </p>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    Second, designed and implemented an automated process to remove known stock claims. 
+                                    Performed statistical analysis to quantify the impact, establishing confidence intervals for cost recovery.
+                                </p>
+                            </div>
+                            
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Result</strong>
+                                <p style="margin:4px 0 0 0; font-size:0.95rem; color:var(--color-text);">
+                                    <i class="fa-regular fa-square-check"></i> Root cause identified and documented<br>
+                                    <i class="fa-regular fa-square-check"></i> Automated stock claim removal flag implemented<br>
+                                    <i class="fa-regular fa-square-check"></i> Statistical analysis confirmed measurable cost recovery<br>
+                                    <i class="fa-regular fa-square-check"></i> Purchasing capacity improved
+                                </p>
+                            </div>
+                            
+                            <div style="margin-top:16px; display:flex; gap:16px; flex-wrap:wrap; padding-top:12px; border-top:1px solid rgba(0,0,0,0.06);">
+                                <span style="font-size:0.8rem; color:var(--color-muted);">
+                                    <i class="fas fa-lock"></i> Internal project, details available upon request
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             
             
             
