@@ -8,15 +8,13 @@ function includeHTML(selector, filePath) {
 }
 
 function toggleProject(card) {
-    // If clicked card is already expanded, collapse it
     if (card.classList.contains('expanded')) {
         card.classList.remove('expanded');
         const content = card.querySelector('.star-content');
         if (content) content.style.display = 'none';
         return;
     }
-    
-    // Close any other expanded cards (keeps page clean)
+
     document.querySelectorAll('.project-card.expanded').forEach(function(other) {
         if (other !== card) {
             other.classList.remove('expanded');
@@ -24,8 +22,7 @@ function toggleProject(card) {
             if (otherContent) otherContent.style.display = 'none';
         }
     });
-    
-    // Expand this card
+
     card.classList.add('expanded');
     const content = card.querySelector('.star-content');
     if (content) content.style.display = 'block';
@@ -34,4 +31,32 @@ function toggleProject(card) {
 document.addEventListener("DOMContentLoaded", () => {
     includeHTML("#navbar", "/components/navbar.html");
     includeHTML("#footer", "/components/footer.html");
+
+    // FILTER LOGIC
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            filterBtns.forEach(function(b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+
+            const filter = btn.getAttribute('data-filter');
+
+            cards.forEach(function(card) {
+                const categories = card.getAttribute('data-category').split(' ');
+                if (filter === 'all' || categories.includes(filter)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            document.querySelectorAll('.project-card.expanded').forEach(function(c) {
+                c.classList.remove('expanded');
+                const content = c.querySelector('.star-content');
+                if (content) content.style.display = 'none';
+            });
+        });
+    });
 });

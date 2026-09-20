@@ -71,13 +71,25 @@
     </div>
 </section>
 
+<!-- PROJECT FILTERS -->
+<div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="data-engineering">Data Engineering</button>
+    <button class="filter-btn" data-filter="data-analytics">Data Analytics</button>
+    <button class="filter-btn" data-filter="statistical-analysis">Statistical Analysis</button>
+    <button class="filter-btn" data-filter="ai-optimization">AI & Optimization</button>
+    <button class="filter-btn" data-filter="control-systems">Control Systems</button>
+</div>
+
+<!-- PROJECT PORTFOLIO -->
+
     <div class="container">
         <h2 style="text-align:center; margin-bottom:0px; font-weight:700;">Project Portfolio</h2>
         <div class="impact-grid">
             <section class="impact-grid">
 
                 <!-- PROJECT: Data Pipeline -->
-                <div class="impact-card project-card" onclick="toggleProject(this)">
+                <div class="impact-card project-card" data-category="data-engineering" onclick="toggleProject(this)">
                     <div class="impact-icon">
                         <i class="fa-solid fa-database"></i>
                     </div>
@@ -143,71 +155,14 @@
                     </div>
                 </div>
 
-                <!-- PROJECT: Merge Orders -->
-                <div class="impact-card project-card" onclick="toggleProject(this)">
+                <!-- PROJECT: Soft Robot -->
+                <div class="impact-card project-card" data-category="control-systems" onclick="toggleProject(this)">
                     <div class="impact-icon">
-                        <i class="fa-solid fa-cart-plus"></i>
+                        <i class="fa-solid fa-hand-holding-medical"></i>
                     </div>
                     <div class="impact-content">
-                        <h3 class="impact-title">Order Merge Intelligence</h3>
-                        <p class="impact-desc">Validated business rules, corrected the business case, and uncovered fraud patterns</p>
-                        <!-- HINT: Tells user to click -->
-                        <div class="click-hint"><i class="fa-solid fa-angle-down"></i> Click to expand</div>
-
-                        <div class="star-content" style="display:none; margin-top:16px; border-top:2px solid var(--color-accent); padding-top:16px;">
-
-                            <div class="star-item">
-                                <strong style="color:var(--color-accent);">Situation</strong>
-                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                                    The development team was building an automated system to merge orders placed in quick succession. 
-                                    The business rules had been defined, but they hadn't been tested against real-world data. 
-                                    Plus, the business case justifying the project was based on assumptions that needed verification.
-                                </p>
-                            </div>
-
-                            <div class="star-item">
-                                <strong style="color:var(--color-accent);">Task</strong>
-                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                                    Verify the business rules against actual order data, identify bottlenecks, 
-                                    validate or correct the business case, and present findings to the company.
-                                </p>
-                            </div>
-
-                            <div class="star-item">
-                                <strong style="color:var(--color-accent);">Action</strong>
-                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                                    Analyzed real order data to verify the business rules against actual patterns. 
-                                    Identified bottlenecks where the rules didn't match reality. 
-                                    Updated the business case with corrected assumptions and more accurate projections. 
-                                </p>
-                            </div>
-
-                            <div class="star-item">
-                                <strong style="color:var(--color-accent);">Result</strong>
-                                <p style="margin:4px 0 0 0; font-size:0.95rem; color:var(--color-text);">
-                                    <i class="fa-regular fa-square-check"></i> Business rules validated and corrected.<br>
-                                    <i class="fa-regular fa-square-check"></i> Business case updated with accurate assumptions and expectations.<br>
-                                    <i class="fa-regular fa-square-check"></i> Delivered company-wide demo, explaining the gap between expected and actual gains, and what we learned from the discrepancy <br>
-                                    <i class="fa-regular fa-square-check"></i> During the analysis, uncovered patterns that enabled the fraud detection team to identify previously unknown fraudulent cases.
-                                </p>
-                            </div>
-                            <div style="margin-top:16px; display:flex; gap:16px; flex-wrap:wrap; padding-top:12px; border-top:1px solid rgba(0,0,0,0.06);">
-                                <span style="font-size:0.8rem; color:var(--color-muted);">
-                                    <i class="fas fa-lock"></i> Internal project, details available upon request
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- PROJECT: No Man's Cart -->
-                <div class="impact-card project-card" onclick="toggleProject(this)">
-                    <div class="impact-icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                    <div class="impact-content">
-                        <h3 class="impact-title">Stock Claim Investigation</h3>
-                        <p class="impact-desc">Uncovered a hidden process issue and implemented a solution to recover operational capacity</p> 
+                        <h3 class="impact-title">Soft Robot for Hand Rehabilitation</h3>
+                        <p class="impact-desc">End-to-end design, modeling, control, and fabrication of a soft robotic system for automated rehabilitation</p> 
                         <!-- HINT: Tells user to click -->
                         <div class="click-hint"><i class="fa-solid fa-angle-down"></i> Click to expand</div>
                         
@@ -217,55 +172,69 @@
                             <div class="star-item">
                                 <strong style="color:var(--color-accent);">Situation</strong>
                                 <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                                    Stock claims were accumulating due to orders stuck in an undefined status. 
-                                    The root cause was unknown, the scope was unclear, and the issue was affecting multiple stakeholders.
+                                    Hand rehabilitation after injury or stroke requires repetitive, controlled movement therapy. 
+                                    Traditional devices are rigid, expensive, and often intimidating for patients. 
+                                    Soft robotics offers a gentler alternative, but designing a safe, controllable soft actuator 
+                                    for clinical use is a multidisciplinary challenge spanning mechanics, control theory, and fabrication.
                                 </p>
                             </div>
                             
                             <div class="star-item">
                                 <strong style="color:var(--color-accent);">Task</strong>
                                 <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                                    Investigate the issue independently, 
-                                    identify the root cause, 
-                                    quantify the impact, and 
-                                    deliver a solution.
+                                    Design, model, build, and validate a soft robotic hand rehabilitation device, 
+                                    from concept to working prototype.
                                 </p>
                             </div>
                             
                             <div class="star-item">
                                 <strong style="color:var(--color-accent);">Action</strong>
                                 <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                                    First, conducted a cross-functional investigation, gathering insights from multiple teams to piece together the full picture. 
-                                    Identified that orders which couldn't be fulfilled were later holding stock claims, 
-                                    taking up storage space and consuming purchasing capacity, even after refunds had been processed.
+                                    <strong>Design:</strong> Designed the soft actuator geometry from scratch, 
+                                    balancing compliance for safety with force output for effective therapy.
                                 </p>
                                 <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                                    Second, designed and implemented an automated process to remove known stock claims. 
-                                    Performed statistical analysis to quantify the impact, establishing confidence intervals for cost recovery.
+                                    <strong>Modeling:</strong> Built both analytical and numerical models 
+                                    to predict actuator behavior under pressure, enabling model-based controller design.
+                                </p>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    <strong>Control:</strong> Designed controllers to ensure safe, 
+                                    repeatable rehabilitation movements—automating the therapy process.
+                                </p>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    <strong>Fabrication:</strong> Molded and 3D-printed the device, set up and configured
+                                    the pneumatic control setup, including real-time signal processing for pressure and position feedback.
+                                </p>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    <strong>Validation:</strong> Tested the full system experimentally 
+                                    to verify performance and safety.
                                 </p>
                             </div>
                             
                             <div class="star-item">
                                 <strong style="color:var(--color-accent);">Result</strong>
                                 <p style="margin:4px 0 0 0; font-size:0.95rem; color:var(--color-text);">
-                                    <i class="fa-regular fa-square-check"></i> Root cause identified and documented<br>
-                                    <i class="fa-regular fa-square-check"></i> Automated stock claim removal flag implemented<br>
-                                    <i class="fa-regular fa-square-check"></i> Statistical analysis confirmed measurable cost recovery<br>
-                                    <i class="fa-regular fa-square-check"></i> Purchasing capacity improved
+                                    <i class="fa-regular fa-square-check"></i> Produced a fully functional soft robotic rehabilitation prototype<br>
+                                    <i class="fa-regular fa-square-check"></i> Demonstrated real-time viability in a peer-reviewed publication<br>
+                                    <i class="fa-regular fa-square-check"></i> Completed end-to-end delivery from conceptual design to real-time prototype testing
                                 </p>
                             </div>
                             
                             <div style="margin-top:16px; display:flex; gap:16px; flex-wrap:wrap; padding-top:12px; border-top:1px solid rgba(0,0,0,0.06);">
-                                <span style="font-size:0.8rem; color:var(--color-muted);">
-                                    <i class="fas fa-lock"></i> Internal project, details available upon request
-                                </span>
+                                <a href="https://www.sciencedirect.com/science/article/pii/S0957415821001537" target="_blank" style="color:var(--color-accent); text-decoration:none; font-weight:600; font-size:0.9rem;">
+                                    <i class="fas fa-external-link-alt"></i> View Publication 1 (Numerical)
+                                </a>
+                                <a href="https://www.sciencedirect.com/science/article/pii/S0957415822000022" target="_blank" style="color:var(--color-accent); text-decoration:none; font-weight:600; font-size:0.9rem;">
+                                    <i class="fas fa-external-link-alt"></i> View Publication 2 (Analytical)
+                                </a>
                             </div>
+
                         </div>
                     </div>
                 </div>
 
                 <!-- PROJECT: Dodging the Moose -->
-                <div class="impact-card project-card" onclick="toggleProject(this)">
+                <div class="impact-card project-card" data-category="control-systems ai-optimization" onclick="toggleProject(this)">
                     <div class="impact-icon">
                         <i class="fa-solid fa-car-crash"></i>
                     </div>
@@ -334,9 +303,138 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- PROJECT: No Man's Cart -->
+                <div class="impact-card project-card" data-category="data-analytics statistical-analysis" onclick="toggleProject(this)">
+                    <div class="impact-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h3 class="impact-title">Stock Claim Investigation</h3>
+                        <p class="impact-desc">Uncovered a hidden process issue and implemented a solution to recover operational capacity</p> 
+                        <!-- HINT: Tells user to click -->
+                        <div class="click-hint"><i class="fa-solid fa-angle-down"></i> Click to expand</div>
+                        
+                        <!-- STAR CONTENT (hidden by default) -->
+                        <div class="star-content" style="display:none; margin-top:16px; border-top:2px solid var(--color-accent); padding-top:16px;">
+                            
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Situation</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    Stock claims were accumulating due to orders stuck in an undefined status. 
+                                    The root cause was unknown, the scope was unclear, and the issue was affecting multiple stakeholders.
+                                </p>
+                            </div>
+                            
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Task</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    Investigate the issue independently, 
+                                    identify the root cause, 
+                                    quantify the impact, and 
+                                    deliver a solution.
+                                </p>
+                            </div>
+                            
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Action</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    First, conducted a cross-functional investigation, gathering insights from multiple teams to piece together the full picture. 
+                                    Identified that orders which couldn't be fulfilled were later holding stock claims, 
+                                    taking up storage space and consuming purchasing capacity, even after refunds had been processed.
+                                </p>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    Second, designed and implemented an automated process to remove known stock claims. 
+                                    Performed statistical analysis to quantify the impact, establishing confidence intervals for cost recovery.
+                                </p>
+                            </div>
+                            
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Result</strong>
+                                <p style="margin:4px 0 0 0; font-size:0.95rem; color:var(--color-text);">
+                                    <i class="fa-regular fa-square-check"></i> Root cause identified and documented<br>
+                                    <i class="fa-regular fa-square-check"></i> Automated stock claim removal flag implemented<br>
+                                    <i class="fa-regular fa-square-check"></i> Statistical analysis confirmed measurable cost recovery<br>
+                                    <i class="fa-regular fa-square-check"></i> Purchasing capacity improved
+                                </p>
+                            </div>
+                            
+                            <div style="margin-top:16px; display:flex; gap:16px; flex-wrap:wrap; padding-top:12px; border-top:1px solid rgba(0,0,0,0.06);">
+                                <span style="font-size:0.8rem; color:var(--color-muted);">
+                                    <i class="fas fa-lock"></i> Internal project, details available upon request
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PROJECT: Proactive Emergency Collision Avoidance -->
+                <div class="impact-card project-card" data-category="statistical-analysis control-systems ai-optimization" onclick="toggleProject(this)">
+                    <div class="impact-icon">
+                        <i class="fa-solid fa-road-circle-check"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h3 class="impact-title">Proactive Emergency Collision Avoidance</h3>
+                        <p class="impact-desc">Stochastic control strategy that enables safer, less conservative emergency maneuvers in highway scenarios</p>
+                        <!-- HINT: Tells user to click -->
+                        <div class="click-hint"><i class="fa-solid fa-angle-down"></i> Click to expand</div>
+
+                        <div class="star-content" style="display:none; margin-top:16px; border-top:2px solid var(--color-accent); padding-top:16px;">
+
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Situation</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    Automated driving systems often take overly conservative decisions in emergency situations. 
+                                    For example, they take unnecessary braking because they can't predict other drivers' behavior. 
+                                    This creates safety risks (e.g., rear-end collisions) and reduces trust in autonomous systems.
+                                </p>
+                            </div>
+
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Task</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    Develop a control strategy that enables proactive emergency maneuvers 
+                                    (such as safely changing lanes to avoid a collision) 
+                                    rather than just reacting with conservative braking.
+                                </p>
+                            </div>
+
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Action</strong>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    <strong>Technical delivery:</strong> Designed a stochastic predictive planner that accounts for uncertainty in other vehicles' behavior. 
+                                    The design uses advanced approximation techniques to enable real-time implementation. 
+                                </p>
+                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
+                                    <strong>Verification:</strong> Validated the approach in industry standard high-fidelity simulations
+                                    and benchmarked against state-of-the-art methods.
+                                </p>
+                            </div>
+
+                            <div class="star-item">
+                                <strong style="color:var(--color-accent);">Result</strong>
+                                <p style="margin:4px 0 0 0; font-size:0.95rem; color:var(--color-text);">
+                                    See it in action!
+                                </p>
+                                <div style="margin-top:8px;">
+                                    <a href="https://www.youtube.com/watch?v=UacmQDjQ2vI" target="_blank" style="display:inline-flex; align-items:center; gap:8px; color:var(--color-accent); text-decoration:none; font-weight:600; font-size:0.95rem; background:rgba(202,21,81,0.08); padding:6px 14px; border-radius:20px;">
+                                        <i class="fab fa-youtube" style="font-size:1.2rem;"></i> Watch Simulation Video
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div style="margin-top:16px; display:flex; gap:16px; flex-wrap:wrap; padding-top:12px; border-top:1px solid rgba(0,0,0,0.06);">
+                                <a href="https://ieeexplore.ieee.org/abstract/document/10714459" target="_blank" style="color:var(--color-accent); text-decoration:none; font-weight:600; font-size:0.9rem;">
+                                    <i class="fas fa-external-link-alt"></i> View Publication
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>                
             
                 <!-- PROJECT: H4MPC -->
-                <div class="impact-card project-card" onclick="toggleProject(this)">
+                <div class="impact-card project-card" data-category="control-systems ai-optimization" onclick="toggleProject(this)">
                     <div class="impact-icon">
                         <i class="fa-solid fa-toolbox"></i>
                     </div>
@@ -402,14 +500,14 @@
                     </div>
                 </div>
 
-                <!-- PROJECT: Proactive Emergency Collision Avoidance -->
-                <div class="impact-card project-card" onclick="toggleProject(this)">
+                <!-- PROJECT: Merge Orders -->
+                <div class="impact-card project-card" data-category="data-analytics" onclick="toggleProject(this)">
                     <div class="impact-icon">
-                        <i class="fa-solid fa-road-circle-check"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
                     </div>
                     <div class="impact-content">
-                        <h3 class="impact-title">Proactive Emergency Collision Avoidance</h3>
-                        <p class="impact-desc">Stochastic control strategy that enables safer, less conservative emergency maneuvers in highway scenarios</p>
+                        <h3 class="impact-title">Order Merge Intelligence</h3>
+                        <p class="impact-desc">Validated business rules, corrected the business case, and uncovered fraud patterns</p>
                         <!-- HINT: Tells user to click -->
                         <div class="click-hint"><i class="fa-solid fa-angle-down"></i> Click to expand</div>
 
@@ -418,57 +516,49 @@
                             <div class="star-item">
                                 <strong style="color:var(--color-accent);">Situation</strong>
                                 <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                                    Automated driving systems often take overly conservative decisions in emergency situations. 
-                                    For example, they take unnecessary braking because they can't predict other drivers' behavior. 
-                                    This creates safety risks (e.g., rear-end collisions) and reduces trust in autonomous systems.
+                                    The development team was building an automated system to merge orders placed in quick succession. 
+                                    The business rules had been defined, but they hadn't been tested against real-world data. 
+                                    Plus, the business case justifying the project was based on assumptions that needed verification.
                                 </p>
                             </div>
 
                             <div class="star-item">
                                 <strong style="color:var(--color-accent);">Task</strong>
                                 <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                                    Develop a control strategy that enables proactive emergency maneuvers 
-                                    (such as safely changing lanes to avoid a collision) 
-                                    rather than just reacting with conservative braking.
+                                    Verify the business rules against actual order data, identify bottlenecks, 
+                                    validate or correct the business case, and present findings to the company.
                                 </p>
                             </div>
 
                             <div class="star-item">
                                 <strong style="color:var(--color-accent);">Action</strong>
                                 <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                                    <strong>Technical delivery:</strong> Designed a stochastic predictive planner that accounts for uncertainty in other vehicles' behavior. 
-                                    The design uses advanced approximation techniques to enable real-time implementation. 
-                                </p>
-                                <p style="margin:4px 0 12px 0; font-size:0.95rem; color:var(--color-text);">
-                                    <strong>Verification:</strong> Validated the approach in industry standard high-fidelity simulations
-                                    and benchmarked against state-of-the-art methods.
+                                    Analyzed real order data to verify the business rules against actual patterns. 
+                                    Identified bottlenecks where the rules didn't match reality. 
+                                    Updated the business case with corrected assumptions and more accurate projections. 
                                 </p>
                             </div>
 
                             <div class="star-item">
                                 <strong style="color:var(--color-accent);">Result</strong>
                                 <p style="margin:4px 0 0 0; font-size:0.95rem; color:var(--color-text);">
-                                    See it in action!
+                                    <i class="fa-regular fa-square-check"></i> Business rules validated and corrected.<br>
+                                    <i class="fa-regular fa-square-check"></i> Business case updated with accurate assumptions and expectations.<br>
+                                    <i class="fa-regular fa-square-check"></i> Delivered company-wide demo, explaining the gap between expected and actual gains, and what we learned from the discrepancy <br>
+                                    <i class="fa-regular fa-square-check"></i> During the analysis, uncovered patterns that enabled the fraud detection team to identify previously unknown fraudulent cases.
                                 </p>
-                                <div style="margin-top:8px;">
-                                    <a href="https://www.youtube.com/watch?v=UacmQDjQ2vI" target="_blank" style="display:inline-flex; align-items:center; gap:8px; color:var(--color-accent); text-decoration:none; font-weight:600; font-size:0.95rem; background:rgba(202,21,81,0.08); padding:6px 14px; border-radius:20px;">
-                                        <i class="fab fa-youtube" style="font-size:1.2rem;"></i> Watch Simulation Video
-                                    </a>
-                                </div>
                             </div>
-
                             <div style="margin-top:16px; display:flex; gap:16px; flex-wrap:wrap; padding-top:12px; border-top:1px solid rgba(0,0,0,0.06);">
-                                <a href="https://ieeexplore.ieee.org/abstract/document/10714459" target="_blank" style="color:var(--color-accent); text-decoration:none; font-weight:600; font-size:0.9rem;">
-                                    <i class="fas fa-external-link-alt"></i> View Publication
-                                </a>
+                                <span style="font-size:0.8rem; color:var(--color-muted);">
+                                    <i class="fas fa-lock"></i> Internal project, details available upon request
+                                </span>
                             </div>
-
                         </div>
                     </div>
                 </div>
 
                 <!-- PROJECT: GA4 Dashboard Fix -->
-                <div class="impact-card project-card" onclick="toggleProject(this)">
+                <div class="impact-card project-card" data-category="data-analytics data-engineering" onclick="toggleProject(this)">
                     <div class="impact-icon">
                         <i class="fa-solid fa-chart-pie"></i>
                     </div>
@@ -526,7 +616,7 @@
                 </div>
 
                 <!-- PROJECT: Formation Planning -->
-                <div class="impact-card project-card" onclick="toggleProject(this)">
+                <div class="impact-card project-card" data-category="data-analytics" onclick="toggleProject(this)">
                     <div class="impact-icon">
                         <i class="fa-solid fa-table-cells-large"></i>
                     </div>
@@ -540,7 +630,7 @@
                 </div>
 
                 <!-- PROJECT: Recruitment Funnel -->
-                <div class="impact-card project-card" onclick="toggleProject(this)">
+                <div class="impact-card project-card" data-category="data-analytics statistical-analysis" onclick="toggleProject(this)">
                     <div class="impact-icon">
                         <i class="fa-solid fa-user-plus"></i>
                     </div>
